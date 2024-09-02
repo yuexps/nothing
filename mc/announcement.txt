@@ -8,22 +8,22 @@
   "title": [
     {
       "lang": "en",
-      "text": "Welcome to MSFXP～"
+      "text": "MSFXP"
     },
     {
       "lang": "zh_CN",
-      "text": "欢迎来到MSFXP服务器～"
+      "text": "MSFXP"
     }
   ],
   "date": "2025.01.01",
   "content": [
     {
       "lang": "en",
-      "text": "ala～ala～"
+      "text": "Welcome to MSFXP~"
     },
     {
       "lang": "zh_CN",
-      "text": "啊啦啊啦～"
+      "text": "欢迎来到MSFXP服务器～"
     }
   ]
 }
