@@ -1,0 +1,20 @@
+[
+  {
+    "type": "release",
+    "versionCode": 1,
+    "versionName": "1.0.1",
+    "date": "2025.01.01",
+    "description": [
+      {
+        "lang": "en",
+        "text": "Fix some bugs."
+      },
+      {
+        "lang": "zh_CN",
+        "text": "若出现此弹窗，请点击忽略"
+      }
+    ],
+    "netdiskUrl": "https://url67.ctfile.com/d/37104367-57608754-ff5ae3?p=2604",
+    "url": "https://icraft.ren:90/error.jpg"
+  }
+]
