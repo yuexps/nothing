@@ -1,1 +1,29 @@
-欢迎来到MSFXP服务器～
+{
+  "id": 2,
+  "significant": true,
+  "outdated": false,
+  "minVersion": -1,
+  "maxVersion": -1,
+  "specificLang": [],
+  "title": [
+    {
+      "lang": "en",
+      "text": "Welcome to MSFXP～"
+    },
+    {
+      "lang": "zh_CN",
+      "text": "欢迎来到MSFXP服务器～"
+    }
+  ],
+  "date": "2024.03.05",
+  "content": [
+    {
+      "lang": "en",
+      "text": "ala～ala～"
+    },
+    {
+      "lang": "zh_CN",
+      "text": "啊啦啊啦～"
+    }
+  ]
+}
