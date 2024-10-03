@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 125px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <title>请假列表</title>
+    <link href="/index_files/app.d643614491f7efc0076e98c2d16bd446.css" rel="stylesheet">
+    <style type="text/css">
+        .index-message-box[data-v-003fe549] {
+            padding: .1rem;
+            text-align: center
+        }
+
+        .index-message-box .img-box[data-v-003fe549] {
+            padding: .02rem;
+            background-color: #fff;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            width: .7rem;
+            height: .7rem;
+            margin: 0 auto
+        }
+
+        .index-message-box .img-box img[data-v-003fe549] {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%
+        }
+
+        .index-message-box .message-box[data-v-003fe549] {
+            font-size: .12rem;
+            color: #fff
+        }
+
+        .index-message-box .message-box p[data-v-003fe549] {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap
+        }
+
+        .main[data-v-003fe549] {
+            min-height: 3rem;
+            margin: 0 .1rem;
+            background-color: #fff;
+            padding: .1rem;
+            box-shadow: .02rem .02rem .05rem #d1e8f1
+        }
+
+        .message-box .shutiao[data-v-003fe549] {
+            font-size: .14rem;
+            margin-right: .02rem
+        }
+
+        .m_l10[data-v-003fe549] {
+            margin-left: .1rem
+        }
+
+        .red[data-v-003fe549] {
+            color: #ed909b
+        }
+    </style>
+    <style type="text/css">
+        .footer[data-v-700c024a] {
+            font-size: .12rem;
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            bottom: 0;
+            background-color: #fff;
+            height: .4rem;
+            overflow: hidden;
+            box-shadow: 0 -1px .05rem #e1f1f7;
+            padding: .05rem 0
+        }
+
+        .footer .footer-nav[data-v-700c024a] {
+            width: 33.333333333333336%;
+            float: left;
+            text-align: center
+        }
+
+        .footer .footer-nav i[data-v-700c024a] {
+            font-size: .22rem;
+            display: block
+        }
+
+        .footer .footer-nav p[data-v-700c024a] {
+            line-height: .15rem
+        }
+
+        .noChoosed[data-v-700c024a] {
+            color: #c8dbe3
+        }
+
+        .isChoosed[data-v-700c024a] {
+            color: #3ab2e8
+        }
+
+        .noSee[data-v-700c024a] {
+            position: absolute;
+            top: .05rem;
+            right: .35rem;
+            width: .1rem;
+            height: .1rem;
+            background-color: #f16b75;
+            color: #fff;
+            border-radius: 50%
+        }
+    </style>
+    <style type="text/css">
+        .index-icon[data-v-0874e3e8] {
+            font-size: .12rem;
+            width: 33.3333333%;
+            text-align: center;
+            float: left;
+            margin: .08rem 0;
+            height: .75rem
+        }
+
+        .index-icon .icon-div[data-v-0874e3e8] {
+            width: .35rem;
+            height: .35rem;
+            border-radius: 50%;
+            margin: 0 auto
+        }
+
+        .index-icon i[data-v-0874e3e8] {
+            font-size: .2rem;
+            vertical-align: middle;
+            color: #fff;
+            line-height: .35rem
+        }
+
+        .index-icon .nameDiv[data-v-0874e3e8] {
+            color: #a3b9c2
+        }
+
+        .nameDiv[data-v-0874e3e8] {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2
+        }
+    </style>
+    <style type="text/css">
+        .touch-box[data-v-6fca3218] {
+            overflow-x: hidden
+        }
+
+        .box[data-v-6fca3218] {
+            position: relative;
+            font-size: .12rem;
+            padding: .1rem;
+            background-color: #fff;
+            overflow: hidden;
+            clear: both;
+            border-bottom: 1px solid #eef2f4;
+            box-shadow: 0 -1px .05rem #e1f1f7;
+            margin-bottom: .1rem
+        }
+
+        .box[data-v-6fca3218]:last-child {
+            border: none
+        }
+
+        .box p[data-v-6fca3218] {
+            color: #818181;
+            overflow: hidden
+        }
+
+        .result[data-v-6fca3218] {
+            height: .59rem;
+            background-size: contain
+        }
+
+        .noPic[data-v-6fca3218] {
+            text-align: center;
+            padding-top: .3rem
+        }
+
+        .tip[data-v-6fca3218] {
+            color: #eb578b;
+            font-size: .12rem;
+            padding: .05rem .1rem;
+            box-sizing: border-box;
+            background-color: #fff
+        }
+
+        .qrCode img[data-v-6fca3218] {
+            width: 60px;
+            height: 60px
+        }
+
+        .box-tit[data-v-6fca3218] {
+            color: #282626;
+            font-size: .12rem;
+            width: .7rem;
+            float: left;
+            text-align: right
+        }
+
+        .box-content[data-v-6fca3218] {
+            float: left;
+            width: 99.3rem
+        }
+
+        .result[data-v-6fca3218] {
+            position: absolute;
+            right: .3rem;
+            bottom: .05rem;
+            z-index: 99;
+            width: .6rem;
+            height: .6rem;
+            background-size: 100% 100%
+        }
+
+        .pop[data-v-6fca3218] {
+            width: 3rem
+        }
+
+        .pop img[data-v-6fca3218] {
+            width: 100%
+        }
+    </style>
+    <style type="text/css">
+        .btn-bottom-box[data-v-e78d00a8] {
+            height: .45rem;
+            width: 100%;
+            background-color: #4db8e7;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            font-size: .16rem;
+            line-height: .45rem;
+            border: none;
+            outline: none;
+            z-index: 100
+        }
+    </style>
+</head>
+
+<body>
+    <div data-v-37b55479="" class="wh_100">
+        <div data-v-6fca3218="" data-v-37b55479="" class="wh_100">
+            <header data-v-6fca3218="" class="mint-header header-default font16">
+                <div class="mint-header-button is-left"><button data-v-6fca3218=""
+                        class="mint-button mint-button--default mint-button--normal"><span class="mint-button-icon"><i
+                                class="mintui mintui-back"></i></span> <label class="mint-button-text"></label></button>
+                </div>
+                <h1 class="mint-header-title">请假列表</h1>
+                <div class="mint-header-button is-right"></div>
+            </header>
+            <div data-v-6fca3218="" class="tip center">当前您有请假未完成，不能新增请假申请！</div>
+            <div data-v-6fca3218="">
+                <div data-v-6fca3218="" class="box">
+                    <p data-v-6fca3218=""><span data-v-6fca3218="" class="box-tit">事由类型：</span>事假<span
+                            data-v-6fca3218="" class="right">共计（0天4小时）</span></p>
+                    <p data-v-6fca3218=""><span data-v-6fca3218="" class="box-tit">请假时间：</span>
+                        2024-9-14 8至2024-9-14 12
+                    </p>
+                    <p data-v-6fca3218=""><span data-v-6fca3218="" class="box-tit">外出地点：</span></p>
+                    <p data-v-6fca3218=""><span data-v-6fca3218="" class="box-tit">审核状态：</span>已销假</p>
+                    <div data-v-6fca3218=""><span data-v-6fca3218="" class="box-tit">二维码：</span>
+                        <div data-v-6fca3218="" class="qrCode"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mint-indicator" style="display: none;">
+        <div class="mint-indicator-wrapper" style="padding: 20px;"><span class="mint-indicator-spin">
+                <div class="mint-spinner-snake"
+                    style="border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); height: 32px; width: 32px;">
+                </div>
+                <div class="mint-indicator-mask"></div>
+        </div>
+</body>
+
+</html>
